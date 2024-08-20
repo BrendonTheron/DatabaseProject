@@ -1,3 +1,4 @@
+--test test hehehe
 
 drop table INVOICE cascade constraints;
 
