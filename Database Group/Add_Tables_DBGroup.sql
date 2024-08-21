@@ -1,5 +1,3 @@
---test test hehehe
-
 drop table INVOICE cascade constraints;
 
 CREATE TABLE INVOICE (
