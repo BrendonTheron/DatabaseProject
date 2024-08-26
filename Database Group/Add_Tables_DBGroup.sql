@@ -118,7 +118,7 @@ INSERT INTO HALL VALUES ('201', '1628764', 'Weka', '5 Pretty Parade', 'Auckland'
 INSERT INTO HALL VALUES ('202', '1677872', 'Tui', '6 Pretty Parade', 'Auckland', '0632', '09', '4783428');
 INSERT INTO HALL VALUES ('203', '2032213', 'Pukeko', '7 Pretty Parade', 'Auckland', '0632', '09', '4783662');
 
---
+--INSERTED
 --HALL_ROOM DATA
 INSERT INTO HALL_ROOM VALUES ('1', '201', '270.00', 'VEGAN', 'N');
 INSERT INTO HALL_ROOM VALUES ('2', '201', '290.00', 'NA', 'Y');
