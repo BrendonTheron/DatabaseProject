@@ -80,34 +80,39 @@ INSERT INTO STAFF VALUES
 (22457854, 'Alastor', 'Moody', '1969-05-24', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
 (18654321, 'Argus', 'Filch', '1974-07-18', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
 
+
 COMMIT;
 
---STAFF HISTROY
+--STAFF HISTORY
+
 
 INSERT INTO STAFF_HISTORY VALUES
-(18597341, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18764532, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(19284756, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(19374628, '2019-09-01', '2022-06-30', 'Professor', 'Oteha Campus', 00), -- dept id
-(19485732, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(19573846, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(20294876, '2020-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
-(21293487, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21384756, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21475839, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21584629, '2021-09-01', NULL, 'Administrative Assistant', 'Accomodation Office', NULL),
-(22457839, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(18597341, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 4), 
+(18764532, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(19284756, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 5), 
+(19374628, '2019-09-01', '2022-06-30', 'Professor', 'Oteha Campus', 4),
+(19485732, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(19573846, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 4), 
+(20294876, '2020-09-01', NULL, 'Advisor', 'Oteha Campus', 5), 
+(21293487, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(21384756, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(21475839, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 5), 
+(21584629, '2021-09-01', NULL, 'Administrative Assistant', 'Accommodation Office', NULL),
+(22457839, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 1), 
 (20322132, '2020-09-01', NULL, 'Hall Manager', 'Pukeko Hall', NULL),
 (16778722, '2016-09-01', NULL, 'Hall Manager', 'Tui Hall', NULL),
 (16287642, '2016-09-01', NULL, 'Hall Manager', 'Weka Hall', NULL),
-(22459515, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457456, '2022-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
-(22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL);
+
+(22459515, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 5),
+(22457456, '2022-09-01', NULL, 'Advisor', 'Oteha Campus', 4), 
+(22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 1), 
+(22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL)
+;
 
 COMMIT;
+
 
 --Hall Building
 
@@ -149,32 +154,32 @@ COMMIT;
 --Degree
 
 INSERT INTO DEGREE (
-    DEG_ID, DEPT_ID, DEG_TITLE, STAFF_ID, STAFF_START
+    DEG_ID, DEPT_ID, DEG_TITLE, STAFF_ID
 ) VALUES
-(1, 1, 'Bachelor of Computer Science', NULL, Null),
-(2, 1, 'Master of Computer Science', Null, Null),
-(3, 1, 'PhD in Computer Science', Null, Null),
-(4, 1, 'Diploma in Computer Programming', Null, Null),
+(1, 1, 'Bachelor of Computer Science', 19284756),
+(2, 1, 'Master of Computer Science', 19284756),
+(3, 1, 'PhD in Computer Science', 19284756),
+(4, 1, 'Diploma in Computer Programming', 19284756),
 
-(5, 2, 'Bachelor of Mathematics', Null, Null),
-(6, 2, 'Master of Mathematics', Null, Null),
-(7, 2, 'PhD in Mathematics', Null, Null),
-(8, 2, 'Diploma in Applied Mathematics', Null, Null),
+(5, 2, 'Bachelor of Mathematics', 19485732),
+(6, 2, 'Master of Mathematics', 19485732),
+(7, 2, 'PhD in Mathematics', 19485732),
+(8, 2, 'Diploma in Applied Mathematics', 19485732),
 
-(9, 3, 'Bachelor of Physics', Null, Null),
-(10, 3, 'Master of Physics', Null, Null),
-(11, 3, 'PhD in Physics', Null, Null),
-(12, 3, 'Diploma in Astrophysics', Null, Null),
+(9, 3, 'Bachelor of Physics', 22457854),
+(10, 3, 'Master of Physics', 22457854),
+(11, 3, 'PhD in Physics', 22457854),
+(12, 3, 'Diploma in Astrophysics', 22457854),
 
-(13, 4, 'Bachelor of Chemistry', Null, Null),
-(14, 4, 'Master of Chemistry', Null, Null),
-(15, 4, 'PhD in Chemistry', Null, Null),
-(16, 4, 'Diploma in Organic Chemistry', Null),
+(13, 4, 'Bachelor of Chemistry', 21293487),
+(14, 4, 'Master of Chemistry', 21293487),
+(15, 4, 'PhD in Chemistry', 21293487),
+(16, 4, 'Diploma in Organic Chemistry', 21293487),
 
-(17, 5, 'Bachelor of Biology', Null, Null),
-(18, 5, 'Master of Biology', Null, Null),
-(19, 5, 'PhD in Biology', Null, Null),
-(20, 5, 'Diploma in Molecular Biology', Null, Null);
+(17, 5, 'Bachelor of Biology', 21384756),
+(18, 5, 'Master of Biology', 21384756),
+(19, 5, 'PhD in Biology', 21384756),
+(20, 5, 'Diploma in Molecular Biology', 21384756);
 
 COMMIT;
 
