@@ -2,23 +2,23 @@
 INSERT INTO ACCESSABILITY (
     ACCESS_ID, ACCESS_REQ_COMMENT, ACCESS_ALLERGIES
 ) VALUES
-(1, 'Wheelchair accessible room needed', NULL),
-(2, 'Requires ground floor accommodation', NULL),
-(3, 'Needs large print materials', NULL),
-(4, 'Requires assistance with mobility', NULL),
-(5, 'Needs hearing assistance', NULL),
+(1001, 'Wheelchair accessible room needed', NULL),
+(1002, 'Requires ground floor accommodation', NULL),
+(1003, 'Needs large print materials', NULL),
+(1004, 'Requires assistance with mobility', NULL),
+(1005, 'Needs hearing assistance', NULL),
 
-(6, NULL, 'Peanut allergy'),
-(7, NULL, 'Allergic to shellfish'),
-(8, NULL, 'Dairy intolerance'),
-(9, NULL, 'Gluten sensitivity'),
-(10, NULL, 'Soy allergy'),
+(1006, NULL, 'Peanut allergy'),
+(1007, NULL, 'Allergic to shellfish'),
+(1008, NULL, 'Dairy intolerance'),
+(1009, NULL, 'Gluten sensitivity'),
+(1010, NULL, 'Soy allergy'),
 
-(11, 'Requires allergen-free food', 'Peanut allergy'),
-(12, 'Recovering from leg injury', 'Allergic to shellfish'),
-(13, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
-(14, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
-(15, 'Requires hypoallergenic environment', 'Soy allergy');
+(1011, 'Requires allergen-free food', 'Peanut allergy'),
+(1012, 'Recovering from leg injury', 'Allergic to shellfish'),
+(1013, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
+(1014, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
+(1015, 'Requires hypoallergenic environment', 'Soy allergy');
 
 COMMIT;
 
@@ -53,31 +53,34 @@ INSERT INTO SEMESTER VALUES ('S22025', '17/07/2025', '26/10/2025');
 INSERT INTO SEMESTER VALUES ('S32025', '4/11/2025', '6/02/2026');
 INSERT INTO SEMESTER VALUES ('S12026', '24/02/2026', '6/06/2026');
 
+COMMIT;
+
 --STAFF
 
 INSERT INTO STAFF VALUES
-(18597341, 'Albus', 'Dumbledore', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(18764532, 'Severus', 'Snape', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(19284756, 'Minerva', 'McGonagall', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(19374628, 'Sirius', 'Black', '12 Grimmauld Place, London', 'Male'),
-(19485732, 'Remus', 'Lupin', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(19573846, 'Rubeus', 'Hagrid', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(20294876, 'Lucius', 'Malfoy', 'Malfoy Manor, Wiltshire', 'Male'),
-(21293487, 'Horace', 'Slughorn', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(21384756, 'Pomona', 'Sprout', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(21475839, 'Gilderoy', 'Lockhart', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(21584629, 'Rita', 'Skeeter', 'Daily Prophet Office, London', 'Female'),
-(22457839, 'Sybill', 'Trelawney', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say');
-(20322132, 'Charity', 'Burbage', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(16778722, 'Rolanda', 'Hooch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say'),
-(16287642, 'Filius', 'Flitwick', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22459515, 'Dolores', 'Umbridge', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(22457456, 'Cuthbert', 'Binns', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22457866, 'Septima', 'Vector', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(22457898, 'Amycus', 'Carrow', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22457854, 'Alastor', 'Moody', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(18654321, 'Argus', 'Filch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male')
-;
+(18597341, 'Albus', 'Dumbledore', '1964-10-15', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
+(18764532, 'Severus', 'Snape', '1981-11-01', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(19284756, 'Minerva', 'McGonagall', '1969-02-21', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(19374628, 'Sirius', 'Black', '1989-06-01', 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male'),
+(19485732, 'Remus', 'Lupin', '1989-04-25', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(19573846, 'Rubeus', 'Hagrid', '1975-10-14', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(20294876, 'Lucius', 'Malfoy', '1971-05-09', 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male'),
+(21293487, 'Horace', 'Slughorn', '1968-06-05', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(21384756, 'Pomona', 'Sprout', '1968-09-28', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(21475839, 'Gilderoy', 'Lockhart', '1975-08-12', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(21584629, 'Rita', 'Skeeter', '1978-04-26', 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female'),
+(22457839, 'Sybill', 'Trelawney', '1969-07-13', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say');
+(20322132, 'Charity', 'Burbage', '1970-10-20', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(16778722, 'Rolanda', 'Hooch', '1968-11-10', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say'),
+(16287642, 'Filius', 'Flitwick', '1972-02-11', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(22459515, 'Dolores', 'Umbridge', '1972-03-03', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female'),
+(22457456, 'Cuthbert', 'Binns', '1971-08-14', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(22457866, 'Septima', 'Vector', '1976-12-05', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female'),
+(22457898, 'Amycus', 'Carrow', '1968-01-15', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(22457854, 'Alastor', 'Moody', '1969-05-24', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
+(18654321, 'Argus', 'Filch', '1974-07-18', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
+
+COMMIT;
 
 --STAFF HISTROY
 
@@ -102,14 +105,15 @@ INSERT INTO STAFF_HISTORY VALUES
 (22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
 (22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
 (22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL)
-;
+(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL);
+
+COMMIT;
 
 --Hall Building
 
-INSERT INTO HALL VALUES ('Weka', '16287642', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
-INSERT INTO HALL VALUES ('Tui', '16778722', '8 Cool Crescent', 'Auckland', '0632', '(09)', '4783428');
-INSERT INTO HALL VALUES ('Pukeko', '20322132', '17 Allgood Avenue', 'Auckland', '0632', '(09)', '4783662');
+INSERT INTO HALL_BUILDING VALUES ('Weka', '16287642', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
+INSERT INTO HALL_BUILDING VALUES ('Tui', '16778722', '8 Cool Crescent', 'Auckland', '0632', '(09)', '4783428');
+INSERT INTO HALL_BUILDING VALUES ('Pukeko', '20322132', '17 Allgood Avenue', 'Auckland', '0632', '(09)', '4783662');
 
 --Flat Building
 
@@ -179,7 +183,7 @@ COMMIT;
 INSERT INTO STUDENT (
     STU_ID, STU_FNAME, STU_LNAME, STU_STREET, STU_CITY, STU_ZIP, STU_DOB, 
     STU_GENDER, STU_SEX, STU_NATIONALITY, STU_STATUS, STU_SMOKER, ACCESS_ID, 
-    STU_ADDITONAL_COMMENTS, DEGREE_ID, STAFF_ID, MOVEIN_DATE, MOVEOUT_DATE
+    STU_ADDITONAL_COMMENTS, DEGREE_ID, STAFF_ID, MOVEIN_DATE, MOVEOUT_DATE 
 ) VALUES
 (1, 'John', 'Doe', '123 Queen St', 'Auckland', '1010', TO_DATE('1998-05-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 1, 1, NULL, NULL),
 (2, 'Jane', 'Smith', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('1985-11-22', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 2, 2, NULL, NULL),
