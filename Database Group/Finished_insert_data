@@ -106,9 +106,9 @@ INSERT INTO STAFF_HISTORY VALUES
 
 --Hall Building
 
-INSERT INTO HALL VALUES ('Weka', '16287642', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
-INSERT INTO HALL VALUES ('Tui', '16778722', '8 Cool Crescent', 'Auckland', '0632', '(09)', '4783428');
-INSERT INTO HALL VALUES ('Pukeko', '20322132', '17 Allgood Avenue', 'Auckland', '0632', '(09)', '4783662');
+INSERT INTO HALL_BUILDING VALUES ('Weka', '16287642', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
+INSERT INTO HALL_BUILDING VALUES ('Tui', '16778722', '8 Cool Crescent', 'Auckland', '0632', '(09)', '4783428');
+INSERT INTO HALL_BUILDING VALUES ('Pukeko', '20322132', '17 Allgood Avenue', 'Auckland', '0632', '(09)', '4783662');
 
 --Flat Building
 
