@@ -114,9 +114,9 @@ INSERT INTO FLAT_ROOM VALUES ('278', '503', '189.00', 'Y');
 
 --INSTERED
 --HALL DATA
-INSERT INTO HALL VALUES ('201', '1628764', 'Weka', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
-INSERT INTO HALL VALUES ('202', '1677872', 'Tui', '6 Pretty Parade', 'Auckland', '0632', '(09)', '4783428');
-INSERT INTO HALL VALUES ('203', '2032213', 'Pukeko', '7 Pretty Parade', 'Auckland', '0632', '(09)', '4783662');
+INSERT INTO HALL VALUES ('201', '16287642', 'Weka', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
+INSERT INTO HALL VALUES ('202', '16778722', 'Tui', '6 Pretty Parade', 'Auckland', '0632', '(09)', '4783428');
+INSERT INTO HALL VALUES ('203', '20322132', 'Pukeko', '7 Pretty Parade', 'Auckland', '0632', '(09)', '4783662');
 
 --WAITING ON ACCESS_REQ (BRENDAN)
 --HALL_ROOM DATA
