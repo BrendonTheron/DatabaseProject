@@ -2,23 +2,23 @@
 INSERT INTO ACCESSABILITY (
     ACCESS_ID, ACCESS_REQ_COMMENT, ACCESS_ALLERGIES
 ) VALUES
-(1, 'Wheelchair accessible room needed', NULL),
-(2, 'Requires ground floor accommodation', NULL),
-(3, 'Needs large print materials', NULL),
-(4, 'Requires assistance with mobility', NULL),
-(5, 'Needs hearing assistance', NULL),
+(1001, 'Wheelchair accessible room needed', NULL),
+(1002, 'Requires ground floor accommodation', NULL),
+(1003, 'Needs large print materials', NULL),
+(1004, 'Requires assistance with mobility', NULL),
+(1005, 'Needs hearing assistance', NULL),
 
-(6, NULL, 'Peanut allergy'),
-(7, NULL, 'Allergic to shellfish'),
-(8, NULL, 'Dairy intolerance'),
-(9, NULL, 'Gluten sensitivity'),
-(10, NULL, 'Soy allergy'),
+(1006, NULL, 'Peanut allergy'),
+(1007, NULL, 'Allergic to shellfish'),
+(1008, NULL, 'Dairy intolerance'),
+(1009, NULL, 'Gluten sensitivity'),
+(1010, NULL, 'Soy allergy'),
 
-(11, 'Requires allergen-free food', 'Peanut allergy'),
-(12, 'Recovering from leg injury', 'Allergic to shellfish'),
-(13, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
-(14, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
-(15, 'Requires hypoallergenic environment', 'Soy allergy');
+(1011, 'Requires allergen-free food', 'Peanut allergy'),
+(1012, 'Recovering from leg injury', 'Allergic to shellfish'),
+(1013, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
+(1014, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
+(1015, 'Requires hypoallergenic environment', 'Soy allergy');
 
 COMMIT;
 
@@ -53,6 +53,8 @@ INSERT INTO SEMESTER VALUES ('S22025', '17/07/2025', '26/10/2025');
 INSERT INTO SEMESTER VALUES ('S32025', '4/11/2025', '6/02/2026');
 INSERT INTO SEMESTER VALUES ('S12026', '24/02/2026', '6/06/2026');
 
+COMMIT;
+
 --STAFF
 
 INSERT INTO STAFF VALUES
@@ -78,6 +80,8 @@ INSERT INTO STAFF VALUES
 (22457854, 'Alastor', 'Moody', '1969-05-24', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
 (18654321, 'Argus', 'Filch', '1974-07-18', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
 
+COMMIT;
+
 --STAFF HISTROY
 
 INSERT INTO STAFF_HISTORY VALUES
@@ -101,8 +105,9 @@ INSERT INTO STAFF_HISTORY VALUES
 (22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
 (22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
 (22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL)
-;
+(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL);
+
+COMMIT;
 
 --Hall Building
 
