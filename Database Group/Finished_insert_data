@@ -80,34 +80,39 @@ INSERT INTO STAFF VALUES
 (22457854, 'Alastor', 'Moody', '1969-05-24', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
 (18654321, 'Argus', 'Filch', '1974-07-18', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
 
+
 COMMIT;
 
 --STAFF HISTROY
 
+
 INSERT INTO STAFF_HISTORY VALUES
-(18597341, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18764532, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(19284756, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(18597341, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 4), 
+(18764532, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(19284756, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 5), 
 (19374628, '2019-09-01', '2022-06-30', 'Professor', 'Oteha Campus', 00), -- dept id
-(19485732, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(19573846, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(20294876, '2020-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
-(21293487, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21384756, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21475839, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(21584629, '2021-09-01', NULL, 'Administrative Assistant', 'Accomodation Office', NULL),
-(22457839, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(19485732, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(19573846, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 4), 
+(20294876, '2020-09-01', NULL, 'Advisor', 'Oteha Campus', 5), 
+(21293487, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(21384756, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(21475839, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 5), 
+(21584629, '2021-09-01', NULL, 'Administrative Assistant', 'Accommodation Office', NULL),
+(22457839, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 1), 
 (20322132, '2020-09-01', NULL, 'Hall Manager', 'Pukeko Hall', NULL),
 (16778722, '2016-09-01', NULL, 'Hall Manager', 'Tui Hall', NULL),
 (16287642, '2016-09-01', NULL, 'Hall Manager', 'Weka Hall', NULL),
-(22459515, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457456, '2022-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
-(22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
-(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL);
+
+(22459515, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 5),
+(22457456, '2022-09-01', NULL, 'Advisor', 'Oteha Campus', 4), 
+(22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 1), 
+(22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 3), 
+(22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 2), 
+(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL)
+;
 
 COMMIT;
+
 
 --Hall Building
 
