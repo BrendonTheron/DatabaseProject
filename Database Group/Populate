@@ -144,3 +144,27 @@ INSERT INTO DEGREE (
 (20, 5, 'Diploma in Molecular Biology', 120, TO_DATE('2023-10-10', 'YYYY-MM-DD'));
 
 COMMIT;
+
+-- Insert into ACCESSABILITY table
+INSERT INTO ACCESSABILITY (
+    ACCESS_ID, ACCESS_REQ_COMMENT, ACCESS_ALLERGIES
+) VALUES
+(1, 'Wheelchair accessible room needed', NULL),
+(2, 'Requires ground floor accommodation', NULL),
+(3, 'Needs large print materials', NULL),
+(4, 'Requires assistance with mobility', NULL),
+(5, 'Needs hearing assistance', NULL),
+
+(6, NULL, 'Peanut allergy'),
+(7, NULL, 'Allergic to shellfish'),
+(8, NULL, 'Dairy intolerance'),
+(9, NULL, 'Gluten sensitivity'),
+(10, NULL, 'Soy allergy'),
+
+(11, 'Requires allergen-free food and wheelchair access', 'Peanut allergy'),
+(12, 'Needs special accommodations for allergies and physical therapy', 'Allergic to shellfish'),
+(13, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
+(14, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
+(15, 'Requires allergy-free environment and physical accommodations', 'Soy allergy');
+
+COMMIT;
