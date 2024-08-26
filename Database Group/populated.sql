@@ -121,33 +121,37 @@ CREATE TABLE STAFF (
     STAFF_ID NUMBER NOT NULL,  -- PK
     STAFF_FNAME VARCHAR2(20) CONSTRAINT NN_STAFF_FNAME NOT NULL,
     STAFF_LNAME VARCHAR2(20) CONSTRAINT NN_STAFF_LNAME NOT NULL,
-    STAFF_ADDRESS VARCHAR2(100) CONSTRAINT NN_STAFF_ADDRESS NOT NULL,  
+    STAFF_DOB DATE CONSTRAINT NN_STAFF_DOB NOT NULL,
+    STAFF_ADDR_CITY VARCHAR2(100) CONSTRAINT NN_STAFF_ADDR_CITY NOT NULL,  
+    STAFF_ADDR_SUBURB VARCHAR2(100) CONSTRAINT NN_STAFF_ADDR_SUBURB NOT NULL,  
+    STAFF_ADDR_STREET VARCHAR2(100) CONSTRAINT NN_STAFF_ADDR_STREET NOT NULL,  
+    STAFF_ADDR_ZIP NUMBER(4) CONSTRAINT NN_STAFF_ADDR_ZIP NOT NULL,  
     STAFF_SEX VARCHAR2(10) CONSTRAINT NN_STAFF_SEX NOT NULL, -- WITH OPTION FOR "RATHER NOT SAY"
     CONSTRAINT PK_STAFF PRIMARY KEY (STAFF_ID))
 ;
 
 INSERT INTO STAFF VALUES
-(18597341, 'Albus', 'Dumbledore', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(18764532, 'Severus', 'Snape', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(19284756, 'Minerva', 'McGonagall', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(19374628, 'Sirius', 'Black', '12 Grimmauld Place, London', 'Male'),
-(19485732, 'Remus', 'Lupin', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(19573846, 'Rubeus', 'Hagrid', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(20294876, 'Lucius', 'Malfoy', 'Malfoy Manor, Wiltshire', 'Male'),
-(21293487, 'Horace', 'Slughorn', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(21384756, 'Pomona', 'Sprout', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(21475839, 'Gilderoy', 'Lockhart', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(21584629, 'Rita', 'Skeeter', 'Daily Prophet Office, London', 'Female'),
-(22457839, 'Sybill', 'Trelawney', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say');
-(20322132, 'Charity', 'Burbage', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(16778722, 'Rolanda', 'Hooch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say'),
-(16287642, 'Filius', 'Flitwick', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22459515, 'Dolores', 'Umbridge', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(22457456, 'Cuthbert', 'Binns', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22457866, 'Septima', 'Vector', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
-(22457898, 'Amycus', 'Carrow', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(22457854, 'Alastor', 'Moody', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
-(18654321, 'Argus', 'Filch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male')
+(18597341, 'Albus', 'Dumbledore', '1964-10-15', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
+(18764532, 'Severus', 'Snape', '1981-11-01', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(19284756, 'Minerva', 'McGonagall', '1969-02-21', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(19374628, 'Sirius', 'Black', '1989-06-01', 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male'),
+(19485732, 'Remus', 'Lupin', '1989-04-25', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(19573846, 'Rubeus', 'Hagrid', '1975-10-14', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(20294876, 'Lucius', 'Malfoy', '1971-05-09', 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male'),
+(21293487, 'Horace', 'Slughorn', '1968-06-05', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(21384756, 'Pomona', 'Sprout', '1968-09-28', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(21475839, 'Gilderoy', 'Lockhart', '1975-08-12', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(21584629, 'Rita', 'Skeeter', '1978-04-26', 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female'),
+(22457839, 'Sybill', 'Trelawney', '1969-07-13', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say');
+(20322132, 'Charity', 'Burbage', '1970-10-20', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
+(16778722, 'Rolanda', 'Hooch', '1968-11-10', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say'),
+(16287642, 'Filius', 'Flitwick', '1972-02-11', 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
+(22459515, 'Dolores', 'Umbridge', '1972-03-03', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female'),
+(22457456, 'Cuthbert', 'Binns', '1971-08-14', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(22457866, 'Septima', 'Vector', '1976-12-05', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female'),
+(22457898, 'Amycus', 'Carrow', '1968-01-15', 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
+(22457854, 'Alastor', 'Moody', '1969-05-24', 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
+(18654321, 'Argus', 'Filch', '1974-07-18', 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male')
 ;
 
 
