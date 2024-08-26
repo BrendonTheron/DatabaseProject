@@ -1,0 +1,528 @@
+-- Insert into ACCESSABILITY table
+INSERT INTO ACCESSABILITY (
+    ACCESS_ID, ACCESS_REQ_COMMENT, ACCESS_ALLERGIES
+) VALUES
+(1, 'Wheelchair accessible room needed', NULL),
+(2, 'Requires ground floor accommodation', NULL),
+(3, 'Needs large print materials', NULL),
+(4, 'Requires assistance with mobility', NULL),
+(5, 'Needs hearing assistance', NULL),
+
+(6, NULL, 'Peanut allergy'),
+(7, NULL, 'Allergic to shellfish'),
+(8, NULL, 'Dairy intolerance'),
+(9, NULL, 'Gluten sensitivity'),
+(10, NULL, 'Soy allergy'),
+
+(11, 'Requires allergen-free food', 'Peanut allergy'),
+(12, 'Recovering from leg injury', 'Allergic to shellfish'),
+(13, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
+(14, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
+(15, 'Requires hypoallergenic environment', 'Soy allergy');
+
+COMMIT;
+
+--Semester
+
+INSERT INTO SEMESTER VALUES ('S12019', '20/02/2019', '31/05/2019');
+INSERT INTO SEMESTER VALUES ('S22019', '20/07/2019', '21/10/2019');
+INSERT INTO SEMESTER VALUES ('S32019', '10/11/2019', '6/02/2020');
+
+INSERT INTO SEMESTER VALUES ('S12020', '21/02/2020', '30/05/2020');
+INSERT INTO SEMESTER VALUES ('S22020', '19/07/2020', '27/10/2020');
+INSERT INTO SEMESTER VALUES ('S32020', '9/11/2020', '6/02/2021');
+
+INSERT INTO SEMESTER VALUES ('S12021', '22/02/2021', '3/06/2021');
+INSERT INTO SEMESTER VALUES ('S22021', '18/07/2021', '30/10/2021');
+INSERT INTO SEMESTER VALUES ('S32021', '8/11/2021', '7/02/2022');
+
+INSERT INTO SEMESTER VALUES ('S12022', '23/02/2022', '2/06/2022');
+INSERT INTO SEMESTER VALUES ('S22022', '17/07/2022', '29/10/2022');
+INSERT INTO SEMESTER VALUES ('S32022', '7/11/2022', '6/02/2023');
+
+INSERT INTO SEMESTER VALUES ('S12023', '24/02/2023', '29/05/2023');
+INSERT INTO SEMESTER VALUES ('S22023', '16/07/2023', '28/10/2023');
+INSERT INTO SEMESTER VALUES ('S32023', '6/11/2023', '5/02/2024');
+
+INSERT INTO SEMESTER VALUES ('S12024', '25/02/2024', '30/05/2024');
+INSERT INTO SEMESTER VALUES ('S22024', '15/07/2024', '30/10/2024');
+INSERT INTO SEMESTER VALUES ('S32024', '5/11/2024', '5/02/2025');
+
+INSERT INTO SEMESTER VALUES ('S12025', '26/02/2025', '31/05/2025');
+INSERT INTO SEMESTER VALUES ('S22025', '17/07/2025', '26/10/2025');
+INSERT INTO SEMESTER VALUES ('S32025', '4/11/2025', '6/02/2026');
+INSERT INTO SEMESTER VALUES ('S12026', '24/02/2026', '6/06/2026');
+
+--STAFF
+
+INSERT INTO STAFF VALUES
+(18597341, 'Albus', 'Dumbledore', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(18764532, 'Severus', 'Snape', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(19284756, 'Minerva', 'McGonagall', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
+(19374628, 'Sirius', 'Black', '12 Grimmauld Place, London', 'Male'),
+(19485732, 'Remus', 'Lupin', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(19573846, 'Rubeus', 'Hagrid', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(20294876, 'Lucius', 'Malfoy', 'Malfoy Manor, Wiltshire', 'Male'),
+(21293487, 'Horace', 'Slughorn', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(21384756, 'Pomona', 'Sprout', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
+(21475839, 'Gilderoy', 'Lockhart', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(21584629, 'Rita', 'Skeeter', 'Daily Prophet Office, London', 'Female'),
+(22457839, 'Sybill', 'Trelawney', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say');
+(20322132, 'Charity', 'Burbage', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
+(16778722, 'Rolanda', 'Hooch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Prefer not to say'),
+(16287642, 'Filius', 'Flitwick', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(22459515, 'Dolores', 'Umbridge', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
+(22457456, 'Cuthbert', 'Binns', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(22457866, 'Septima', 'Vector', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Female'),
+(22457898, 'Amycus', 'Carrow', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(22457854, 'Alastor', 'Moody', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male'),
+(18654321, 'Argus', 'Filch', 'Hogwarts School of Witchcraft and Wizardry, Scotland', 'Male')
+;
+
+--STAFF HISTROY
+
+INSERT INTO STAFF_HISTORY VALUES
+(18597341, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(18764532, '2018-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(19284756, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(19374628, '2019-09-01', '2022-06-30', 'Professor', 'Oteha Campus', 00), -- dept id
+(19485732, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(19573846, '2019-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(20294876, '2020-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
+(21293487, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(21384756, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(21475839, '2021-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(21584629, '2021-09-01', NULL, 'Administrative Assistant', 'Accomodation Office', NULL),
+(22457839, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(20322132, '2020-09-01', NULL, 'Hall Manager', 'Pukeko Hall', NULL),
+(16778722, '2016-09-01', NULL, 'Hall Manager', 'Tui Hall', NULL),
+(16287642, '2016-09-01', NULL, 'Hall Manager', 'Weka Hall', NULL),
+(22459515, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(22457456, '2022-09-01', NULL, 'Advisor', 'Oteha Campus', 00), -- dept id
+(22457866, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(22457898, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(22457854, '2022-09-01', NULL, 'Professor', 'Oteha Campus', 00), -- dept id
+(18654321, '2018-09-01', NULL, 'Cleaner', 'Tui Hall', NULL)
+;
+
+--Hall Building
+
+INSERT INTO HALL VALUES ('Weka', '16287642', '5 Pretty Parade', 'Auckland', '0632', '(09)', '4783526');
+INSERT INTO HALL VALUES ('Tui', '16778722', '8 Cool Crescent', 'Auckland', '0632', '(09)', '4783428');
+INSERT INTO HALL VALUES ('Pukeko', '20322132', '17 Allgood Avenue', 'Auckland', '0632', '(09)', '4783662');
+
+--Flat Building
+
+INSERT INTO FLAT_BUILDING
+VALUES ('100', '12 Happy Avenue', 'Auckland', '0632');
+
+--Unit Building
+
+INSERT INTO UNIT_BUILDING VALUES ('200', '37 Mary Street', 'Auckland', '0632');
+
+--Diet
+
+INSERT INTO DIET VALUES ('VEGAN', 'Y', 'Y', 'N', 'Y', 'N');
+INSERT INTO DIET VALUES ('VEGITARIAN', 'N', 'N', 'N', 'Y', 'N');
+INSERT INTO DIET VALUES ('GLUTEN_FREE', 'N', 'N', 'Y', 'N', 'N');
+INSERT INTO DIET VALUES ('VEGAN_GLUTEN_FREE', 'Y', 'Y', 'Y', 'Y', 'N');
+INSERT INTO DIET VALUES ('VEGITARIAN_GLUTEN_FREE', 'N', 'N', 'Y', 'Y', 'N');
+INSERT INTO DIET VALUES ('DAIRY_FREE_VEGITARIAN', 'N', 'Y', 'N', 'Y', 'N');
+
+
+--Dept
+
+INSERT INTO DEPT (DEPT_ID, DEPT_NAME) VALUES
+(1, 'Computer Science'),
+(2, 'Mathematics'),
+(3, 'Physics'),
+(4, 'Chemistry'),
+(5, 'Biology');
+
+COMMIT;
+
+
+--Degree
+
+INSERT INTO DEGREE (
+    DEG_ID, DEPT_ID, DEG_TITLE, STAFF_ID, STAFF_START
+) VALUES
+(1, 1, 'Bachelor of Computer Science', NULL, Null),
+(2, 1, 'Master of Computer Science', Null, Null),
+(3, 1, 'PhD in Computer Science', Null, Null),
+(4, 1, 'Diploma in Computer Programming', Null, Null),
+
+(5, 2, 'Bachelor of Mathematics', Null, Null),
+(6, 2, 'Master of Mathematics', Null, Null),
+(7, 2, 'PhD in Mathematics', Null, Null),
+(8, 2, 'Diploma in Applied Mathematics', Null, Null),
+
+(9, 3, 'Bachelor of Physics', Null, Null),
+(10, 3, 'Master of Physics', Null, Null),
+(11, 3, 'PhD in Physics', Null, Null),
+(12, 3, 'Diploma in Astrophysics', Null, Null),
+
+(13, 4, 'Bachelor of Chemistry', Null, Null),
+(14, 4, 'Master of Chemistry', Null, Null),
+(15, 4, 'PhD in Chemistry', Null, Null),
+(16, 4, 'Diploma in Organic Chemistry', Null),
+
+(17, 5, 'Bachelor of Biology', Null, Null),
+(18, 5, 'Master of Biology', Null, Null),
+(19, 5, 'PhD in Biology', Null, Null),
+(20, 5, 'Diploma in Molecular Biology', Null, Null);
+
+COMMIT;
+
+--Student
+
+INSERT INTO STUDENT (
+    STU_ID, STU_FNAME, STU_LNAME, STU_STREET, STU_CITY, STU_ZIP, STU_DOB, 
+    STU_GENDER, STU_SEX, STU_NATIONALITY, STU_STATUS, STU_SMOKER, ACCESS_ID, 
+    STU_ADDITONAL_COMMENTS, DEGREE_ID, STAFF_ID, MOVEIN_DATE, MOVEOUT_DATE
+) VALUES
+(1, 'John', 'Doe', '123 Queen St', 'Auckland', '1010', TO_DATE('1998-05-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 1, 1, NULL, NULL),
+(2, 'Jane', 'Smith', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('1985-11-22', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 2, 2, NULL, NULL),
+(3, 'Alice', 'Johnson', '789 K Rd', 'Auckland', '1010', TO_DATE('2003-03-05', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 3, 3, NULL, NULL),
+(4, 'Bob', 'Brown', '321 The Square', 'Palmerston North', '4410', TO_DATE('1992-08-19', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 4, 4, NULL, NULL),
+(5, 'Charlie', 'Davis', '654 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2000-12-01', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 5, 5, NULL, NULL),
+(6, 'David', 'Miller', '222 Queen St', 'Auckland', '1010', TO_DATE('1995-03-22', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 6, 1, NULL, NULL),
+(7, 'Laura', 'Wilson', '555 College St', 'Palmerston North', '4410', TO_DATE('1990-07-15', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 7, 2, NULL, NULL),
+(8, 'Peter', 'Taylor', '777 Victoria St', 'Auckland', '1010', TO_DATE('1999-01-12', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 8, 3, NULL, NULL),
+(9, 'Anna', 'Lee', '999 Main St', 'Palmerston North', '4410', TO_DATE('2001-09-03', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 9, 4, NULL, NULL),
+(10, 'James', 'Clark', '123 Great North Rd', 'Auckland', '1010', TO_DATE('1988-02-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 10, 5, NULL, NULL),
+(11, 'Emily', 'King', '231 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1994-06-25', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 11, 6, NULL, NULL),
+(12, 'Tom', 'Wright', '345 Dominion Rd', 'Auckland', '1010', TO_DATE('1997-12-19', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 12, 7, NULL, NULL),
+(13, 'Sophia', 'Walker', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2000-08-07', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 13, 8, NULL, NULL),
+(14, 'Daniel', 'Hill', '789 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2003-05-14', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 14, 9, NULL, NULL),
+(15, 'Olivia', 'Scott', '123 Albert St', 'Palmerston North', '4410', TO_DATE('1992-11-30', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 15, 10, NULL, NULL),
+(16, 'Henry', 'Adams', '888 Queen St', 'Auckland', '1010', TO_DATE('2002-04-25', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 16, 11, NULL, NULL),
+(17, 'Amelia', 'Baker', '567 College St', 'Palmerston North', '4410', TO_DATE('1996-09-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 17, 12, NULL, NULL),
+(18, 'Liam', 'Campbell', '999 Victoria St', 'Auckland', '1010', TO_DATE('2000-02-05', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 18, 13, NULL, NULL),
+(19, 'Chloe', 'Davies', '444 The Square', 'Palmerston North', '4410', TO_DATE('1993-06-19', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 19, 14, NULL, NULL),
+(20, 'Ethan', 'Evans', '101 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1998-01-11', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 20, 15, NULL, NULL),
+(21, 'Grace', 'Foster', '333 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1995-07-07', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 21, 16, NULL, NULL),
+(22, 'Oliver', 'Garcia', '678 Dominion Rd', 'Auckland', '1010', TO_DATE('1997-10-14', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 22, 17, NULL, NULL),
+(23, 'Zoe', 'Harris', '789 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2001-03-26', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 23, 18, NULL, NULL),
+(24, 'Lucas', 'Hughes', '202 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1992-11-03', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 24, 19, NULL, NULL),
+(25, 'Emily', 'Jones', '345 Broadway Ave', 'Palmerston North', '4410', TO_DATE('2000-09-17', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 25, 20, NULL, NULL),
+(26, 'Ella', 'Moore', '555 Queen St', 'Auckland', '1010', TO_DATE('2003-04-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 26, 21, NULL, NULL),
+(27, 'Jack', 'Martin', '111 College St', 'Palmerston North', '4410', TO_DATE('1999-11-08', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 27, 22, NULL, NULL),
+(28, 'Sophia', 'Perez', '888 Victoria St', 'Auckland', '1010', TO_DATE('2001-02-17', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 28, 23, NULL, NULL),
+(29, 'Noah', 'Thompson', '321 Main St', 'Palmerston North', '4410', TO_DATE('1998-07-23', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 29, 24, NULL, NULL),
+(30, 'Mia', 'White', '444 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1997-01-19', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 30, 25, NULL, NULL),
+(31, 'Alexander', 'Hall', '555 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1995-03-28', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 31, 26, NULL, NULL),
+(32, 'Isabella', 'Young', '777 Dominion Rd', 'Auckland', '1010', TO_DATE('2002-12-01', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 32, 27, NULL, NULL),
+(33, 'Mason', 'Hernandez', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('1996-08-06', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 33, 28, NULL, NULL),
+(34, 'Emily', 'Lopez', '999 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1993-11-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 34, 29, NULL, NULL),
+(35, 'James', 'Gonzalez', '222 Albert St', 'Palmerston North', '4410', TO_DATE('2000-05-15', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 35, 30, NULL, NULL),
+(36, 'Ava', 'Morris', '123 Queen St', 'Auckland', '1010', TO_DATE('2002-06-15', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 36, 31, NULL, NULL),
+(37, 'Benjamin', 'Murphy', '456 College St', 'Palmerston North', '4410', TO_DATE('2001-08-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 37, 32, NULL, NULL),
+(38, 'Charlotte', 'Cook', '789 Victoria St', 'Auckland', '1010', TO_DATE('1998-04-22', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 38, 33, NULL, NULL),
+(39, 'William', 'Rogers', '321 The Square', 'Palmerston North', '4410', TO_DATE('1997-01-05', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 39, 34, NULL, NULL),
+(40, 'Lily', 'Woods', '555 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2000-12-29', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 40, 35, NULL, NULL),
+(41, 'Ethan', 'Cox', '111 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1999-07-18', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 41, 36, NULL, NULL),
+(42, 'Mia', 'James', '444 Dominion Rd', 'Auckland', '1010', TO_DATE('2003-02-09', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 42, 37, NULL, NULL),
+(43, 'Alexander', 'Miller', '555 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2002-09-26', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 43, 38, NULL, NULL),
+(44, 'Olivia', 'Brown', '678 Queen St', 'Auckland', '1010', TO_DATE('2000-05-21', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 44, 39, NULL, NULL),
+(45, 'Lucas', 'Smith', '123 College St', 'Palmerston North', '4410', TO_DATE('1998-11-15', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 45, 40, NULL, NULL);
+
+COMMIT;
+
+--Next Kin'
+
+INSERT INTO NEXT_KIN (
+    KIN_ID, STU_ID, KIN_FNAME, KIN_LNAME, KIN_RELATIONSHIP, KIN_PHONE, KIN_EMAIL
+) VALUES
+(1, 1, 'Mary', 'Doe', 'Mother', '0212345678', NULL),
+(2, 2, 'Robert', 'Smith', 'Father', NULL, 'robert.smith@example.com'),
+(3, 3, 'Emily', 'Johnson', 'Sister', '0218765432', NULL),
+(4, 4, 'Sarah', 'Brown', 'Aunt', NULL, 'sarah.brown@example.com'),
+(5, 5, 'Michael', 'Davis', 'Brother', '0223456789', NULL),
+(6, 6, 'Susan', 'Miller', 'Mother', NULL, 'susan.miller@example.com'),
+(7, 7, 'John', 'Wilson', 'Father', '0216543210', NULL),
+(8, 8, 'Christine', 'Taylor', 'Sister', NULL, 'christine.taylor@example.com'),
+(9, 9, 'Margaret', 'Lee', 'Aunt', '0228765432', NULL),
+(10, 10, 'Frank', 'Clark', 'Brother', NULL, 'frank.clark@example.com'),
+(11, 11, 'Martha', 'King', 'Mother', '0212345555', NULL),
+(12, 12, 'Albert', 'Wright', 'Uncle', NULL, 'albert.wright@example.com'),
+(13, 13, 'Charles', 'Walker', 'Father', '0229876543', NULL),
+(14, 14, 'Evelyn', 'Hill', 'Sister', NULL, 'evelyn.hill@example.com'),
+(15, 15, 'Henry', 'Scott', 'Father', '0213456789', NULL),
+(16, 16, 'Margaret', 'Adams', 'Mother', '0211234567', NULL),
+(17, 17, 'David', 'Baker', 'Father', NULL, 'david.baker@example.com'),
+(18, 18, 'Jessica', 'Campbell', 'Sister', '0228765432', NULL),
+(19, 19, 'Carol', 'Davies', 'Aunt', NULL, 'carol.davies@example.com'),
+(20, 20, 'Peter', 'Evans', 'Brother', '0212349876', NULL),
+(21, 21, 'Helen', 'Foster', 'Mother', NULL, 'helen.foster@example.com'),
+(22, 22, 'George', 'Garcia', 'Uncle', '0223456789', NULL),
+(23, 23, 'Rachel', 'Harris', 'Sister', NULL, 'rachel.harris@example.com'),
+(24, 24, 'Richard', 'Hughes', 'Father', '0219876543', NULL),
+(25, 25, 'Linda', 'Jones', 'Mother', NULL, 'linda.jones@example.com'),
+(26, 26, 'Anna', 'Moore', 'Mother', '0212341234', NULL),
+(27, 27, 'Robert', 'Martin', 'Father', NULL, 'robert.martin@example.com'),
+(28, 28, 'Lisa', 'Perez', 'Sister', '0225675678', NULL),
+(29, 29, 'Sarah', 'Thompson', 'Aunt', NULL, 'sarah.thompson@example.com'),
+(30, 30, 'Michael', 'White', 'Brother', '0219876543', NULL),
+(31, 31, 'Catherine', 'Hall', 'Mother', NULL, 'catherine.hall@example.com'),
+(32, 32, 'Joseph', 'Young', 'Uncle', '0223451234', NULL),
+(33, 33, 'Daniel', 'Hernandez', 'Father', NULL, 'daniel.hernandez@example.com'),
+(34, 34, 'Patricia', 'Lopez', 'Mother', '0216549876', NULL),
+(35, 35, 'William', 'Gonzalez', 'Brother', NULL, 'william.gonzalez@example.com'),
+(36, 36, 'Helen', 'Morris', 'Mother', '0218765432', NULL),
+(37, 37, 'Emily', 'Murphy', 'Mother', NULL, 'emily.murphy@example.com'),
+(38, 38, 'Mark', 'Cook', 'Father', '0223456789', NULL),
+(39, 39, 'Laura', 'Rogers', 'Aunt', NULL, 'laura.rogers@example.com'),
+(40, 40, 'John', 'Woods', 'Father', '0212345678', NULL),
+(41, 41, 'Natalie', 'Cox', 'Mother', NULL, 'natalie.cox@example.com'),
+(42, 42, 'Laura', 'James', 'Sister', '0229876543', NULL),
+(43, 43, 'Robert', 'Miller', 'Father', NULL, 'robert.miller@example.com'),
+(44, 44, 'Nancy', 'Brown', 'Mother', '0215678912', NULL),
+(45, 45, 'David', 'Smith', 'Father', NULL, 'david.smith@example.com');
+
+COMMIT;
+
+--Invoice
+
+INSERT INTO INVOICE VALUES (
+(1, 1001, 'S12024', '2024-09-01'),
+(2, 1002, 'S12024', '2024-09-01'),
+(3, 1003, 'S22023', '2024-08-01'),
+(4, 1004, 'S22024', '2024-07-01'),
+(5, 1005, 'SS2022', '2024-09-01'),
+(6, 1006, 'S12024', '2024-03-01'),
+(7, 1007, 'S22024', '2023-09-01'),
+(8, 1008, 'S22024', '2023-09-01'),
+(9, 1009, 'S12025', '2023-06-01'),
+(10, 1010, 'S12025', '2024-08-01'),
+(11, 1011, 'S22018', '2024-04-01'),
+(12, 1012, 'S22019', '2020-10-01'),
+(13, 1013, 'SS2020', '2020-09-01'),
+(14, 1014, 'S22024', '2020-09-01'),
+(15, 1015, 'S22024', '2020-07-01'),
+(16, 1016, 'S12018', '2024-03-01'),
+(17, 1017, 'S12019', '2022-06-01'),
+(18, 1018, 'S12022', '2022-05-01'),
+(19, 1019, 'S22019', '2022-12-01'),
+(20, 1020, 'S22023', '2021-11-01')
+);
+
+--Unit
+
+INSERT INTO UNIT VALUES ('1', 'Y', '260.00', 'N', '200');
+INSERT INTO UNIT VALUES ('2', 'Y', '277.00', 'N', '200');
+INSERT INTO UNIT VALUES ('3', 'N', '256.00', 'N', '200');
+INSERT INTO UNIT VALUES ('4', 'N', '320.00', 'N', '200');
+INSERT INTO UNIT VALUES ('5', 'Y', '306.00', 'N', '200');
+INSERT INTO UNIT VALUES ('6', 'N', '236.00', 'N', '200');
+INSERT INTO UNIT VALUES ('7', 'N', '232.00', 'N', '200');
+INSERT INTO UNIT VALUES ('8', 'Y', '350.00', 'N', '200');
+INSERT INTO UNIT VALUES ('9', 'Y', '370.00', 'Y', '200');
+INSERT INTO UNIT VALUES ('10', 'Y', '220.00','N', '200');
+INSERT INTO UNIT VALUES ('11', 'N', '286.00','Y', '200');
+INSERT INTO UNIT VALUES ('12', 'N', '290.00','N', '200');
+
+--Member
+
+INSERT INTO MEMBER VALUES ('1', 'Simon', 'Dale', 'Male', '06/03/1990', '','simon.dale@gmail.com','1');
+INSERT INTO MEMBER VALUES ('2', 'Marget', 'Hansey', '', '01/08/2004', '0275158965', '', '1');
+INSERT INTO MEMBER VALUES ('3', 'Sally', 'Levine', 'Female', '04/01/2005', '0225673724', '', '2');
+INSERT INTO MEMBER VALUES ('4', 'Sophie', 'Solace', 'Female', '05/05/1989', '0216678246', '', '2');
+INSERT INTO MEMBER VALUES ('5', 'Alice', 'Elsher', 'Female', '08/03/1992', '', 'alice.elsher@gmail.com','3');
+INSERT INTO MEMBER VALUES ('6', 'Steve', 'Hayes', 'Male', '10/04/1997', '', 'steve.hayes@gmail.com', '3');
+INSERT INTO MEMBER VALUES ('7', 'Smith', 'Ford', '', '04/06/1998', '0277067672', '','4');
+INSERT INTO MEMBER VALUES ('8', 'Sam', 'Beckett', '', '01/02/1988', '', 'sam.beckett@gmail.com', '4');
+INSERT INTO MEMBER VALUES ('9', 'Alex', 'Cromwell', 'Male', '09/05/2000', '0275397891', '', '5');
+INSERT INTO MEMBER VALUES ('10', 'Abby', 'Monroe', 'Female', '11/06/2000', '0269931178 ', '', '5');
+INSERT INTO MEMBER VALUES ('11', 'Tom', 'West', 'Male', '05/09/2000', '', 'tom.west@gmail.com', '6');
+INSERT INTO MEMBER VALUES ('12', 'Oscar', 'Langley', 'Male', '12/01/1988', '', 'oscar.langley@gmail.com', '6');
+INSERT INTO MEMBER VALUES ('13', 'Liam', 'Madison', 'Male', '09/07/2005', '', 'liam.madison@gmail.com', '7');
+INSERT INTO MEMBER VALUES ('14', 'Ben', 'Marley', '', '05/01/2001', '0218738280 ', '', '7');
+INSERT INTO MEMBER VALUES ('15', 'Martin', 'Hope', '', '02/02/1989', '', 'martin.hope@gmail.com', '8');
+INSERT INTO MEMBER VALUES ('16', 'Beth', 'Lopez', 'Female', '11/01/1984', '', 'beth.lopez@gmail.com', '8');
+INSERT INTO MEMBER VALUES ('17', 'Amy', 'Jenkins', 'Female', '10/04/2005', '', 'amy.jenkins@gmail.com', '9');
+INSERT INTO MEMBER VALUES ('18', 'Molly', 'McKenna', 'Male', '05/08/1992', '0280896087 ', '', '9');
+INSERT INTO MEMBER VALUES ('19', 'Sofia', 'Gonzales', 'Male', '04/08/1985', '0263963453 ', '', '10');
+INSERT INTO MEMBER VALUES ('20', 'Dave', 'Keller', 'Male', '03/08/2003', '', 'dave.keller@gmail.com', '10');
+INSERT INTO MEMBER VALUES ('21', 'Tim', 'Adler', 'Male', '08/08/2009', '', 'tim.alder@gmail.com', '10');
+
+--Flat
+
+INSERT INTO FLAT VALUES ('101', '100');
+INSERT INTO FLAT VALUES ('102', '100');
+INSERT INTO FLAT VALUES ('103', '100');
+INSERT INTO FLAT VALUES ('104', '100');
+INSERT INTO FLAT VALUES ('105', '100');
+INSERT INTO FLAT VALUES ('106', '100');
+INSERT INTO FLAT VALUES ('107', '100');
+INSERT INTO FLAT VALUES ('108', '100');
+INSERT INTO FLAT VALUES ('109', '100');
+INSERT INTO FLAT VALUES ('110', '100');
+INSERT INTO FLAT VALUES ('111', '100');
+INSERT INTO FLAT VALUES ('112', '100');
+INSERT INTO FLAT VALUES ('113', '100');
+INSERT INTO FLAT VALUES ('114', '100');
+INSERT INTO FLAT VALUES ('201', '100');
+INSERT INTO FLAT VALUES ('202', '100');
+INSERT INTO FLAT VALUES ('203', '100');
+INSERT INTO FLAT VALUES ('204', '100');
+INSERT INTO FLAT VALUES ('205', '100');
+INSERT INTO FLAT VALUES ('206', '100');
+INSERT INTO FLAT VALUES ('207', '100');
+INSERT INTO FLAT VALUES ('208', '100');
+INSERT INTO FLAT VALUES ('209', '100');
+INSERT INTO FLAT VALUES ('210', '100');
+INSERT INTO FLAT VALUES ('211', '100');
+INSERT INTO FLAT VALUES ('212', '100');
+INSERT INTO FLAT VALUES ('213', '100');
+INSERT INTO FLAT VALUES ('214', '100');
+INSERT INTO FLAT VALUES ('301', '100');
+INSERT INTO FLAT VALUES ('302', '100');
+INSERT INTO FLAT VALUES ('303', '100');
+INSERT INTO FLAT VALUES ('304', '100');
+INSERT INTO FLAT VALUES ('305', '100');
+INSERT INTO FLAT VALUES ('306', '100');
+INSERT INTO FLAT VALUES ('307', '100');
+INSERT INTO FLAT VALUES ('308', '100');
+INSERT INTO FLAT VALUES ('309', '100');
+INSERT INTO FLAT VALUES ('310', '100');
+INSERT INTO FLAT VALUES ('311', '100');
+INSERT INTO FLAT VALUES ('312', '100');
+INSERT INTO FLAT VALUES ('313', '100');
+INSERT INTO FLAT VALUES ('314', '100');
+INSERT INTO FLAT VALUES ('401', '100');
+INSERT INTO FLAT VALUES ('402', '100');
+INSERT INTO FLAT VALUES ('403', '100');
+INSERT INTO FLAT VALUES ('404', '100');
+INSERT INTO FLAT VALUES ('405', '100');
+INSERT INTO FLAT VALUES ('406', '100');
+INSERT INTO FLAT VALUES ('407', '100');
+INSERT INTO FLAT VALUES ('408', '100');
+INSERT INTO FLAT VALUES ('409', '100');
+INSERT INTO FLAT VALUES ('410', '100');
+INSERT INTO FLAT VALUES ('411', '100');
+INSERT INTO FLAT VALUES ('412', '100');
+INSERT INTO FLAT VALUES ('413', '100');
+INSERT INTO FLAT VALUES ('414', '100');
+INSERT INTO FLAT VALUES ('501', '100');
+INSERT INTO FLAT VALUES ('502', '100');
+INSERT INTO FLAT VALUES ('503', '100');
+INSERT INTO FLAT VALUES ('504', '100');
+INSERT INTO FLAT VALUES ('505', '100');
+INSERT INTO FLAT VALUES ('506', '100');
+INSERT INTO FLAT VALUES ('507', '100');
+INSERT INTO FLAT VALUES ('508', '100');
+INSERT INTO FLAT VALUES ('509', '100');
+INSERT INTO FLAT VALUES ('510', '100');
+INSERT INTO FLAT VALUES ('511', '100');
+INSERT INTO FLAT VALUES ('512', '100');
+INSERT INTO FLAT VALUES ('513', '100'); 
+INSERT INTO FLAT VALUES ('514', '100');
+
+--Flat_room
+
+INSERT INTO FLAT_ROOM VALUES ('1', '101', '210.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('2', '101', '190.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('3', '101', '223.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('4', '101', '165.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('5', '101', '180.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('6', '102', '200.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('7', '102', '212.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('8', '102', '175.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('9', '102', '198.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('10', '102', '188.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('71', '201', '192.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('72', '201', '212.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('73', '201', '189.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('74', '201', '170.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('75', '201', '174.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('191', '311', '160.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('192', '311', '180.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('193', '311', '172.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('194', '311', '189.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('195', '311', '190.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('239', '408', '174.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('240', '408', '210.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('241', '408', '191.00', 'Y');
+INSERT INTO FLAT_ROOM VALUES ('242', '408', '200.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('271', '502', '198.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('272', '502', '205.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('273', '502', '185.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('274', '502', '179.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('275', '503', '170.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('276', '503', '165.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('277', '503', '190.00', 'N');
+INSERT INTO FLAT_ROOM VALUES ('278', '503', '189.00', 'Y');
+
+--Hall
+
+INSERT INTO HALL VALUES ('201', 'Weka');
+INSERT INTO HALL VALUES ('202', 'Tui');
+INSERT INTO HALL VALUES ('203', 'Pukeko');
+
+--Hall_room
+
+INSERT INTO HALL_ROOM VALUES ('1', '201', '270.00', 'VEGAN', 'null');
+INSERT INTO HALL_ROOM VALUES ('2', '201', '290.00', 'NA', 'null');
+INSERT INTO HALL_ROOM VALUES ('3', '201', '250.00', 'GLUTEN_FREE', 'null');
+INSERT INTO HALL_ROOM VALUES ('4', '201', '272.00', 'VVEGITARIAN', 'null');
+INSERT INTO HALL_ROOM VALUES ('5', '201', '288.00', 'NA', 'null');
+INSERT INTO HALL_ROOM VALUES ('71', '202', '290.00', 'VEGITARIAN_GLUTEN_FREEE', 'null');
+INSERT INTO HALL_ROOM VALUES ('72', '202', '300.00', 'GLUTEN_FREE', 'null');
+INSERT INTO HALL_ROOM VALUES ('73', '202', '295.00', 'NA', 'null');
+INSERT INTO HALL_ROOM VALUES ('74', '202', '310.00', 'VEGAN', 'N');
+INSERT INTO HALL_ROOM VALUES ('75', '202', '305.00', 'NA', 'N');
+INSERT INTO HALL_ROOM VALUES ('141', '203', '287.00', 'VEGAN_GLUTEN_FREE', 'Y');
+INSERT INTO HALL_ROOM VALUES ('142', '203', '290.00', 'GLUTEN_FREE', 'N');
+INSERT INTO HALL_ROOM VALUES ('143', '203', '298.00', 'NA', 'N');
+INSERT INTO HALL_ROOM VALUES ('144', '203', '305.00', 'NA', 'Y');
+INSERT INTO HALL_ROOM VALUES ('145', '203', '300.00', 'DAIRY_FREE_VEGITARIAN', 'N');
+
+--Accommodation
+
+--Lease
+
+INSERT INTO LEASE VALUES ('1', '60.00', 'S12019', 'S32019', '0', '0');
+INSERT INTO LEASE VALUES ('2', '70.00', 'S22019', 'S12020', '0', '0');
+INSERT INTO LEASE VALUES ('3', '55.00', 'S32019', 'S22020', '0', '0');
+INSERT INTO LEASE VALUES ('4', '65.00', 'S12020', 'S32020', '0', '0');
+INSERT INTO LEASE VALUES ('5', '70.00', 'S22020', 'S12021', '0', '0');
+INSERT INTO LEASE VALUES ('6', '55.00', 'S32020', 'S22021', '0', '0');
+INSERT INTO LEASE VALUES ('7', '60.00', 'S12021', 'S32021', '0', '0');
+INSERT INTO LEASE VALUES ('8', '55.00', 'S22021', 'S12022', '0', '0');
+INSERT INTO LEASE VALUES ('9', '75.00', 'S32021', 'S22022', '0', '0');
+INSERT INTO LEASE VALUES ('10', '50.00', 'S12022', 'S32022', '0', '0');
+INSERT INTO LEASE VALUES ('11', '65.00', 'S22022', 'S12023', '0', '0');
+INSERT INTO LEASE VALUES ('12', '55.00', 'S32022', 'S22023', '0', '0');
+INSERT INTO LEASE VALUES ('13', '60.00', 'S12023', 'S32023', '0', '0');
+INSERT INTO LEASE VALUES ('14', '70.00', 'S22023', 'S12024', '0', '0');
+INSERT INTO LEASE VALUES ('15', '65.00', 'S32023', 'S22024', '0', '0');
+INSERT INTO LEASE VALUES ('16', '55.00', 'S12024', 'S32024', '0', '0');
+INSERT INTO LEASE VALUES ('17', '60.00', 'S22024', 'S12025', '0', '0');
+INSERT INTO LEASE VALUES ('18', '75.00', 'S32024', 'S22025', '0', '0');
+INSERT INTO LEASE VALUES ('19', '55.00', 'S12025', 'S32025', '0', '0');
+INSERT INTO LEASE VALUES ('20', '60.00', 'S22025', 'S12026', '0', '0');
+
+--Inspection
+INSERT INTO INSPECTION VALUES
+(1, 100-101-11, 201, '2024-01-10', 'Y', NULL),
+(2, 100-101-11, 202, '2024-01-15', 'N', 'Minor issues found. Requires follow-up.'),
+(3, 100-101-11, 203, '2024-02-05', 'Y', NULL),
+(4, 100-101-11, 204, '2024-02-20', 'N', 'Safety concerns need immediate attention.'),
+(5, 100-101-11, 205, '2024-03-01', 'Y', NULL),
+(6, 100-101-11, 206, '2024-03-15', 'Y', NULL),
+(7, 100-101-11, 207, '2024-04-10', 'N', 'Several maintenance issues detected.'),
+(8, 100-101-11, 208, '2024-04-20', 'Y', NULL),
+(9, 100-101-11, 209, '2024-05-05', 'Y', NULL),
+(10, 100-101-11, 210, '2024-05-15', 'N', 'Issues with cleanliness observed.'),
+(11, 100-101-11, 211, '2024-06-01', 'Y', NULL),
+(12, 100-101-11, 212, '2024-06-15', 'N', 'Requires improvements in ventilation.'),
+(13, 100-101-11, 213, '2024-07-10', 'Y', NULL),
+(14, 100-101-11, 214, '2024-07-20', 'N', 'Maintenance required for plumbing.'),
+(15, 100-101-11, 215, '2024-08-01', 'Y', NULL),
+(16, 100-101-11, 216, '2024-08-15', 'Y', 'No issues reported.'),
+(17, 100-101-11, 217, '2024-09-01', 'N', 'Electrical faults need attention.'),
+(18, 100-101-11, 218, '2024-09-15', 'Y', NULL),
+(19, 100-101-11, 219, '2024-10-01', 'N', 'Minor issues with cleanliness.'),
+(20, 100-101-11, 220, '2024-10-15', 'Y', 'Inspection complete. No comments.')
+;
