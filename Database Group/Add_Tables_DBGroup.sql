@@ -1,7 +1,7 @@
 --INSERTED
 --FLAT_BUILDING DATA
 INSERT INTO FLAT_BUILDING
-VALUES ('100', '12 Happy Avenue', 'Auckland', '0632')
+VALUES ('100', '12 Happy Avenue', 'Auckland', '0632', '(09)', '4765578')
 ;
 
 --INSERTED
