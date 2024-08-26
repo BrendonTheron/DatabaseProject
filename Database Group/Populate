@@ -1,0 +1,146 @@
+--Insert STUDENT table
+INSERT INTO STUDENT (
+    STU_ID, STU_FNAME, STU_LNAME, STU_STREET, STU_CITY, STU_ZIP, STU_DOB, 
+    STU_GENDER, STU_SEX, STU_NATIONALITY, STU_STATUS, STU_SMOKER, ACCESS_ID, 
+    STU_ADDITONAL_COMMENTS, DEGREE_ID, STAFF_ID, MOVEIN_DATE, MOVEOUT_DATE
+) VALUES
+(1, 'John', 'Doe', '123 Queen St', 'Auckland', '1010', TO_DATE('1998-05-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 1, 1, NULL, NULL),
+(2, 'Jane', 'Smith', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('1985-11-22', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 2, 2, NULL, NULL),
+(3, 'Alice', 'Johnson', '789 K Rd', 'Auckland', '1010', TO_DATE('2003-03-05', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 3, 3, NULL, NULL),
+(4, 'Bob', 'Brown', '321 The Square', 'Palmerston North', '4410', TO_DATE('1992-08-19', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 4, 4, NULL, NULL),
+(5, 'Charlie', 'Davis', '654 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2000-12-01', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 5, 5, NULL, NULL),
+(6, 'David', 'Miller', '222 Queen St', 'Auckland', '1010', TO_DATE('1995-03-22', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 6, 1, NULL, NULL),
+(7, 'Laura', 'Wilson', '555 College St', 'Palmerston North', '4410', TO_DATE('1990-07-15', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 7, 2, NULL, NULL),
+(8, 'Peter', 'Taylor', '777 Victoria St', 'Auckland', '1010', TO_DATE('1999-01-12', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 8, 3, NULL, NULL),
+(9, 'Anna', 'Lee', '999 Main St', 'Palmerston North', '4410', TO_DATE('2001-09-03', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 9, 4, NULL, NULL),
+(10, 'James', 'Clark', '123 Great North Rd', 'Auckland', '1010', TO_DATE('1988-02-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 10, 5, NULL, NULL),
+(11, 'Emily', 'King', '231 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1994-06-25', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 11, 6, NULL, NULL),
+(12, 'Tom', 'Wright', '345 Dominion Rd', 'Auckland', '1010', TO_DATE('1997-12-19', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 12, 7, NULL, NULL),
+(13, 'Sophia', 'Walker', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2000-08-07', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 13, 8, NULL, NULL),
+(14, 'Daniel', 'Hill', '789 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2003-05-14', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 14, 9, NULL, NULL),
+(15, 'Olivia', 'Scott', '123 Albert St', 'Palmerston North', '4410', TO_DATE('1992-11-30', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 15, 10, NULL, NULL),
+(16, 'Henry', 'Adams', '888 Queen St', 'Auckland', '1010', TO_DATE('2002-04-25', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 16, 11, NULL, NULL),
+(17, 'Amelia', 'Baker', '567 College St', 'Palmerston North', '4410', TO_DATE('1996-09-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 17, 12, NULL, NULL),
+(18, 'Liam', 'Campbell', '999 Victoria St', 'Auckland', '1010', TO_DATE('2000-02-05', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 18, 13, NULL, NULL),
+(19, 'Chloe', 'Davies', '444 The Square', 'Palmerston North', '4410', TO_DATE('1993-06-19', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 19, 14, NULL, NULL),
+(20, 'Ethan', 'Evans', '101 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1998-01-11', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 20, 15, NULL, NULL),
+(21, 'Grace', 'Foster', '333 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1995-07-07', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 21, 16, NULL, NULL),
+(22, 'Oliver', 'Garcia', '678 Dominion Rd', 'Auckland', '1010', TO_DATE('1997-10-14', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 22, 17, NULL, NULL),
+(23, 'Zoe', 'Harris', '789 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2001-03-26', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 23, 18, NULL, NULL),
+(24, 'Lucas', 'Hughes', '202 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1992-11-03', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 24, 19, NULL, NULL),
+(25, 'Emily', 'Jones', '345 Broadway Ave', 'Palmerston North', '4410', TO_DATE('2000-09-17', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 25, 20, NULL, NULL),
+(26, 'Ella', 'Moore', '555 Queen St', 'Auckland', '1010', TO_DATE('2003-04-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 26, 21, NULL, NULL),
+(27, 'Jack', 'Martin', '111 College St', 'Palmerston North', '4410', TO_DATE('1999-11-08', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 27, 22, NULL, NULL),
+(28, 'Sophia', 'Perez', '888 Victoria St', 'Auckland', '1010', TO_DATE('2001-02-17', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 28, 23, NULL, NULL),
+(29, 'Noah', 'Thompson', '321 Main St', 'Palmerston North', '4410', TO_DATE('1998-07-23', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 29, 24, NULL, NULL),
+(30, 'Mia', 'White', '444 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1997-01-19', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 30, 25, NULL, NULL),
+(31, 'Alexander', 'Hall', '555 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1995-03-28', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 31, 26, NULL, NULL),
+(32, 'Isabella', 'Young', '777 Dominion Rd', 'Auckland', '1010', TO_DATE('2002-12-01', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 32, 27, NULL, NULL),
+(33, 'Mason', 'Hernandez', '456 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('1996-08-06', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 33, 28, NULL, NULL),
+(34, 'Emily', 'Lopez', '999 Ponsonby Rd', 'Auckland', '1011', TO_DATE('1993-11-12', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'PLACED', 'F', NULL, NULL, 34, 29, NULL, NULL),
+(35, 'James', 'Gonzalez', '222 Albert St', 'Palmerston North', '4410', TO_DATE('2000-05-15', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'PLACED', 'T', NULL, NULL, 35, 30, NULL, NULL),
+(36, 'Ava', 'Morris', '123 Queen St', 'Auckland', '1010', TO_DATE('2002-06-15', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 36, 31, NULL, NULL),
+(37, 'Benjamin', 'Murphy', '456 College St', 'Palmerston North', '4410', TO_DATE('2001-08-10', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 37, 32, NULL, NULL),
+(38, 'Charlotte', 'Cook', '789 Victoria St', 'Auckland', '1010', TO_DATE('1998-04-22', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 38, 33, NULL, NULL),
+(39, 'William', 'Rogers', '321 The Square', 'Palmerston North', '4410', TO_DATE('1997-01-05', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 39, 34, NULL, NULL),
+(40, 'Lily', 'Woods', '555 Ponsonby Rd', 'Auckland', '1011', TO_DATE('2000-12-29', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 40, 35, NULL, NULL),
+(41, 'Ethan', 'Cox', '111 Broadway Ave', 'Palmerston North', '4410', TO_DATE('1999-07-18', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 41, 36, NULL, NULL),
+(42, 'Mia', 'James', '444 Dominion Rd', 'Auckland', '1010', TO_DATE('2003-02-09', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 42, 37, NULL, NULL),
+(43, 'Alexander', 'Miller', '555 Fitzherbert Ave', 'Palmerston North', '4410', TO_DATE('2002-09-26', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 43, 38, NULL, NULL),
+(44, 'Olivia', 'Brown', '678 Queen St', 'Auckland', '1010', TO_DATE('2000-05-21', 'YYYY-MM-DD'), 'Female', 'FEMALE', 'New Zealand', 'WAITING', 'T', NULL, NULL, 44, 39, NULL, NULL),
+(45, 'Lucas', 'Smith', '123 College St', 'Palmerston North', '4410', TO_DATE('1998-11-15', 'YYYY-MM-DD'), 'Male', 'MALE', 'New Zealand', 'WAITING', 'F', NULL, NULL, 45, 40, NULL, NULL);
+
+COMMIT;
+
+--Insert NEXTOFKIN table
+INSERT INTO NEXT_KIN (
+    KIN_ID, STU_ID, KIN_FNAME, KIN_LNAME, KIN_RELATIONSHIP, KIN_PHONE, KIN_EMAIL
+) VALUES
+(1, 1, 'Mary', 'Doe', 'Mother', '0212345678', NULL),
+(2, 2, 'Robert', 'Smith', 'Father', NULL, 'robert.smith@example.com'),
+(3, 3, 'Emily', 'Johnson', 'Sister', '0218765432', NULL),
+(4, 4, 'Sarah', 'Brown', 'Aunt', NULL, 'sarah.brown@example.com'),
+(5, 5, 'Michael', 'Davis', 'Brother', '0223456789', NULL),
+(6, 6, 'Susan', 'Miller', 'Mother', NULL, 'susan.miller@example.com'),
+(7, 7, 'John', 'Wilson', 'Father', '0216543210', NULL),
+(8, 8, 'Christine', 'Taylor', 'Sister', NULL, 'christine.taylor@example.com'),
+(9, 9, 'Margaret', 'Lee', 'Aunt', '0228765432', NULL),
+(10, 10, 'Frank', 'Clark', 'Brother', NULL, 'frank.clark@example.com'),
+(11, 11, 'Martha', 'King', 'Mother', '0212345555', NULL),
+(12, 12, 'Albert', 'Wright', 'Uncle', NULL, 'albert.wright@example.com'),
+(13, 13, 'Charles', 'Walker', 'Father', '0229876543', NULL),
+(14, 14, 'Evelyn', 'Hill', 'Sister', NULL, 'evelyn.hill@example.com'),
+(15, 15, 'Henry', 'Scott', 'Father', '0213456789', NULL),
+(16, 16, 'Margaret', 'Adams', 'Mother', '0211234567', NULL),
+(17, 17, 'David', 'Baker', 'Father', NULL, 'david.baker@example.com'),
+(18, 18, 'Jessica', 'Campbell', 'Sister', '0228765432', NULL),
+(19, 19, 'Carol', 'Davies', 'Aunt', NULL, 'carol.davies@example.com'),
+(20, 20, 'Peter', 'Evans', 'Brother', '0212349876', NULL),
+(21, 21, 'Helen', 'Foster', 'Mother', NULL, 'helen.foster@example.com'),
+(22, 22, 'George', 'Garcia', 'Uncle', '0223456789', NULL),
+(23, 23, 'Rachel', 'Harris', 'Sister', NULL, 'rachel.harris@example.com'),
+(24, 24, 'Richard', 'Hughes', 'Father', '0219876543', NULL),
+(25, 25, 'Linda', 'Jones', 'Mother', NULL, 'linda.jones@example.com'),
+(26, 26, 'Anna', 'Moore', 'Mother', '0212341234', NULL),
+(27, 27, 'Robert', 'Martin', 'Father', NULL, 'robert.martin@example.com'),
+(28, 28, 'Lisa', 'Perez', 'Sister', '0225675678', NULL),
+(29, 29, 'Sarah', 'Thompson', 'Aunt', NULL, 'sarah.thompson@example.com'),
+(30, 30, 'Michael', 'White', 'Brother', '0219876543', NULL),
+(31, 31, 'Catherine', 'Hall', 'Mother', NULL, 'catherine.hall@example.com'),
+(32, 32, 'Joseph', 'Young', 'Uncle', '0223451234', NULL),
+(33, 33, 'Daniel', 'Hernandez', 'Father', NULL, 'daniel.hernandez@example.com'),
+(34, 34, 'Patricia', 'Lopez', 'Mother', '0216549876', NULL),
+(35, 35, 'William', 'Gonzalez', 'Brother', NULL, 'william.gonzalez@example.com'),
+(36, 36, 'Helen', 'Morris', 'Mother', '0218765432', NULL),
+(37, 37, 'Emily', 'Murphy', 'Mother', NULL, 'emily.murphy@example.com'),
+(38, 38, 'Mark', 'Cook', 'Father', '0223456789', NULL),
+(39, 39, 'Laura', 'Rogers', 'Aunt', NULL, 'laura.rogers@example.com'),
+(40, 40, 'John', 'Woods', 'Father', '0212345678', NULL),
+(41, 41, 'Natalie', 'Cox', 'Mother', NULL, 'natalie.cox@example.com'),
+(42, 42, 'Laura', 'James', 'Sister', '0229876543', NULL),
+(43, 43, 'Robert', 'Miller', 'Father', NULL, 'robert.miller@example.com'),
+(44, 44, 'Nancy', 'Brown', 'Mother', '0215678912', NULL),
+(45, 45, 'David', 'Smith', 'Father', NULL, 'david.smith@example.com');
+
+COMMIT;
+
+-- Insert DEPT table
+INSERT INTO DEPT (DEPT_ID, DEPT_NAME) VALUES
+(1, 'Computer Science'),
+(2, 'Mathematics'),
+(3, 'Physics'),
+(4, 'Chemistry'),
+(5, 'Biology');
+
+COMMIT;
+
+-- Insert DEGREE table
+INSERT INTO DEGREE (
+    DEG_ID, DEPT_ID, DEG_TITLE, STAFF_ID, STAFF_START
+) VALUES
+(1, 1, 'Bachelor of Computer Science', 101, TO_DATE('2020-01-01', 'YYYY-MM-DD')),
+(2, 1, 'Master of Computer Science', 102, TO_DATE('2021-02-15', 'YYYY-MM-DD')),
+(3, 1, 'PhD in Computer Science', 103, TO_DATE('2022-03-30', 'YYYY-MM-DD')),
+(4, 1, 'Diploma in Computer Programming', 104, TO_DATE('2023-04-25', 'YYYY-MM-DD')),
+
+(5, 2, 'Bachelor of Mathematics', 105, TO_DATE('2020-05-10', 'YYYY-MM-DD')),
+(6, 2, 'Master of Mathematics', 106, TO_DATE('2021-06-20', 'YYYY-MM-DD')),
+(7, 2, 'PhD in Mathematics', 107, TO_DATE('2022-07-15', 'YYYY-MM-DD')),
+(8, 2, 'Diploma in Applied Mathematics', 108, TO_DATE('2023-08-05', 'YYYY-MM-DD')),
+
+(9, 3, 'Bachelor of Physics', 109, TO_DATE('2020-09-01', 'YYYY-MM-DD')),
+(10, 3, 'Master of Physics', 110, TO_DATE('2021-10-10', 'YYYY-MM-DD')),
+(11, 3, 'PhD in Physics', 111, TO_DATE('2022-11-25', 'YYYY-MM-DD')),
+(12, 3, 'Diploma in Astrophysics', 112, TO_DATE('2023-12-15', 'YYYY-MM-DD')),
+
+(13, 4, 'Bachelor of Chemistry', 113, TO_DATE('2020-03-01', 'YYYY-MM-DD')),
+(14, 4, 'Master of Chemistry', 114, TO_DATE('2021-04-10', 'YYYY-MM-DD')),
+(15, 4, 'PhD in Chemistry', 115, TO_DATE('2022-05-20', 'YYYY-MM-DD')),
+(16, 4, 'Diploma in Organic Chemistry', 116, TO_DATE('2023-06-15', 'YYYY-MM-DD')),
+
+(17, 5, 'Bachelor of Biology', 117, TO_DATE('2020-07-15', 'YYYY-MM-DD')),
+(18, 5, 'Master of Biology', 118, TO_DATE('2021-08-25', 'YYYY-MM-DD')),
+(19, 5, 'PhD in Biology', 119, TO_DATE('2022-09-30', 'YYYY-MM-DD')),
+(20, 5, 'Diploma in Molecular Biology', 120, TO_DATE('2023-10-10', 'YYYY-MM-DD'));
+
+COMMIT;
