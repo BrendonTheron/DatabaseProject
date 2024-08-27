@@ -20,10 +20,6 @@ INSERT INTO ACCESSIBILITY VALUES (1015, 'Requires hypoallergenic environment', '
 COMMIT;
 
 --Semester
-INSERT INTO SEMESTER(
-    SEM_ID, SEM_START_DATE, SEM_END_DATE
-) VALUES
-
 INSERT INTO SEMESTER VALUES ('S12019', '20/02/2019', '31/05/2019');
 INSERT INTO SEMESTER VALUES ('S22019', '20/07/2019', '21/10/2019');
 INSERT INTO SEMESTER VALUES ('S32019', '10/11/2019', '6/02/2020');
@@ -57,28 +53,27 @@ COMMIT;
 
 --STAFF
 
-INSERT INTO STAFF(STAFF_ID, STAFF_FNAME, STAFF_LNAME, STAFF_DOB, STAFF_PHONE STAFF_ADDR_CITY, STAFF_ADDR_SUBURB, STAFF_ADDR_STREET, STAFF_ADDR_ZIP, STAFF_SEX) VALUES
-(18597341, 'Albus', 'Dumbledore', '1964-10-15', 0213456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
-(18764532, 'Severus', 'Snape', '1981-11-01', 0271234567, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
-(19284756, 'Minerva', 'McGonagall', '1969-02-21', 0212345678, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
-(19374628, 'Sirius', 'Black', '1989-06-01', 0279876543, 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male'),
-(19485732, 'Remus', 'Lupin', '1989-04-25', 0219876543, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
-(19573846, 'Rubeus', 'Hagrid', '1975-10-14', 0278765432, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
-(20294876, 'Lucius', 'Malfoy', '1971-05-09', 0214567890, 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male'),
-(21293487, 'Horace', 'Slughorn', '1968-06-05', 0275678901, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
-(21384756, 'Pomona', 'Sprout', '1968-09-28', 0218765432, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
-(21475839, 'Gilderoy', 'Lockhart', '1975-08-12', 0272345678, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
-(21584629, 'Rita', 'Skeeter', '1978-04-26', 0217654321, 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female'),
-(22457839, 'Sybill', 'Trelawney', '1969-07-13', 0276789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say'),
-(20322132, 'Charity', 'Burbage', '1970-10-20', 0216543210, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female'),
-(16778722, 'Rolanda', 'Hooch', '1968-11-10', 0273456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say'),
-(16287642, 'Filius', 'Flitwick', '1972-02-11', 0215432109, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male'),
-(22459515, 'Dolores', 'Umbridge', '1972-03-03', 0279876542, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female'),
-(22457456, 'Cuthbert', 'Binns', '1971-08-14', 0217654320, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
-(22457866, 'Septima', 'Vector', '1976-12-05', 0274567890, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female'),
-(22457898, 'Amycus', 'Carrow', '1968-01-15', 0216789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male'),
-(22457854, 'Alastor', 'Moody', '1969-05-24', 0276543210, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male'),
-(18654321, 'Argus', 'Filch', '1974-07-18', 0214321098, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
+INSERT INTO STAFF VALUES (18597341, 'Albus', 'Dumbledore', '1964-10-15', 0213456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
+INSERT INTO STAFF VALUES (18764532, 'Severus', 'Snape', '1981-11-01', 0271234567, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (19284756, 'Minerva', 'McGonagall', '1969-02-21', 0212345678, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (19374628, 'Sirius', 'Black', '1989-06-01', 0279876543, 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male');
+INSERT INTO STAFF VALUES (19485732, 'Remus', 'Lupin', '1989-04-25', 0219876543, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (19573846, 'Rubeus', 'Hagrid', '1975-10-14', 0278765432, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (20294876, 'Lucius', 'Malfoy', '1971-05-09', 0214567890, 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male');
+INSERT INTO STAFF VALUES (21293487, 'Horace', 'Slughorn', '1968-06-05', 0275678901, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (21384756, 'Pomona', 'Sprout', '1968-09-28', 0218765432, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (21475839, 'Gilderoy', 'Lockhart', '1975-08-12', 0272345678, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (21584629, 'Rita', 'Skeeter', '1978-04-26', 0217654321, 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female');
+INSERT INTO STAFF VALUES (22457839, 'Sybill', 'Trelawney', '1969-07-13', 0276789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say');
+INSERT INTO STAFF VALUES (20322132, 'Charity', 'Burbage', '1970-10-20', 0216543210, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (16778722, 'Rolanda', 'Hooch', '1968-11-10', 0273456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say');
+INSERT INTO STAFF VALUES (16287642, 'Filius', 'Flitwick', '1972-02-11', 0215432109, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (22459515, 'Dolores', 'Umbridge', '1972-03-03', 0279876542, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female');
+INSERT INTO STAFF VALUES (22457456, 'Cuthbert', 'Binns', '1971-08-14', 0217654320, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (22457866, 'Septima', 'Vector', '1976-12-05', 0274567890, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female');
+INSERT INTO STAFF VALUES (22457898, 'Amycus', 'Carrow', '1968-01-15', 0216789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (22457854, 'Alastor', 'Moody', '1969-05-24', 0276543210, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
+INSERT INTO STAFF VALUES (18654321, 'Argus', 'Filch', '1974-07-18', 0214321098, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
 
 COMMIT;
 
