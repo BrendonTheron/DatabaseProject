@@ -51,60 +51,55 @@ INSERT INTO SEMESTER VALUES ('S12026', '24/02/2026', '6/06/2026');
 
 COMMIT;
 
---STAFF
+--STAFF  
 
-INSERT INTO STAFF VALUES (18597341, 'Albus', 'Dumbledore', '1964-10-15', 0213456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
-INSERT INTO STAFF VALUES (18764532, 'Severus', 'Snape', '1981-11-01', 0271234567, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
-INSERT INTO STAFF VALUES (19284756, 'Minerva', 'McGonagall', '1969-02-21', 0212345678, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
-INSERT INTO STAFF VALUES (19374628, 'Sirius', 'Black', '1989-06-01', 0279876543, 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male');
-INSERT INTO STAFF VALUES (19485732, 'Remus', 'Lupin', '1989-04-25', 0219876543, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
-INSERT INTO STAFF VALUES (19573846, 'Rubeus', 'Hagrid', '1975-10-14', 0278765432, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
-INSERT INTO STAFF VALUES (20294876, 'Lucius', 'Malfoy', '1971-05-09', 0214567890, 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male');
-INSERT INTO STAFF VALUES (21293487, 'Horace', 'Slughorn', '1968-06-05', 0275678901, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
-INSERT INTO STAFF VALUES (21384756, 'Pomona', 'Sprout', '1968-09-28', 0218765432, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
-INSERT INTO STAFF VALUES (21475839, 'Gilderoy', 'Lockhart', '1975-08-12', 0272345678, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
-INSERT INTO STAFF VALUES (21584629, 'Rita', 'Skeeter', '1978-04-26', 0217654321, 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female');
-INSERT INTO STAFF VALUES (22457839, 'Sybill', 'Trelawney', '1969-07-13', 0276789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say');
-INSERT INTO STAFF VALUES (20322132, 'Charity', 'Burbage', '1970-10-20', 0216543210, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
-INSERT INTO STAFF VALUES (16778722, 'Rolanda', 'Hooch', '1968-11-10', 0273456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say');
-INSERT INTO STAFF VALUES (16287642, 'Filius', 'Flitwick', '1972-02-11', 0215432109, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
-INSERT INTO STAFF VALUES (22459515, 'Dolores', 'Umbridge', '1972-03-03', 0279876542, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female');
-INSERT INTO STAFF VALUES (22457456, 'Cuthbert', 'Binns', '1971-08-14', 0217654320, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
-INSERT INTO STAFF VALUES (22457866, 'Septima', 'Vector', '1976-12-05', 0274567890, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female');
-INSERT INTO STAFF VALUES (22457898, 'Amycus', 'Carrow', '1968-01-15', 0216789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
-INSERT INTO STAFF VALUES (22457854, 'Alastor', 'Moody', '1969-05-24', 0276543210, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
-INSERT INTO STAFF VALUES (18654321, 'Argus', 'Filch', '1974-07-18', 0214321098, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
-
-COMMIT;
-
---STAFF HISTORY
-
-INSERT INTO STAFF_HISTORY(STAFF_ID, STAFF_START, STAFF_END, STAFF_INT_PH, STAFF_POSITION, STAFF_LOCATION, DEPT_ID) VALUES
-(18597341, '2018-09-01', NULL, '0800627739-(201)', 'Professor', 'Oteha Campus', 74104), 
-(18764532, '2018-09-01', NULL, '0800627739-(202)', 'Professor', 'Oteha Campus', 74102), 
-(19284756, '2019-09-01', NULL, '0800627739-(203)', 'Professor', 'Oteha Campus', 74105), 
-(19374628, '2019-09-01', '2022-06-30', '0800627739-(204)', 'Professor', 'Oteha Campus', 74104),
-(19485732, '2019-09-01', NULL, '0800627739-(205)', 'Professor', 'Oteha Campus', 74102), 
-(19573846, '2019-09-01', NULL, '0800627739-(206)', 'Professor', 'Oteha Campus', 74104),
-(20294876, '2020-09-01', NULL, '0800627739-(207)', 'Advisor', 'Oteha Campus', 74105), 
-(21293487, '2021-09-01', NULL, '0800627739-(208)', 'Professor', 'Oteha Campus', 74103), 
-(21384756, '2021-09-01', NULL, '0800627739-(209)', 'Professor', 'Oteha Campus', 74103), 
-(21475839, '2021-09-01', NULL, '0800627739-(210)', 'Professor', 'Oteha Campus', 74105), 
-(21584629, '2021-09-01', NULL, '0800627739-(211)', 'Administrative Assistant', 'Accommodation Office', NULL),
-(22457839, '2022-09-01', NULL, '0800627739-(212)', 'Professor', 'Oteha Campus', 74101), 
-(20322132, '2020-09-01', NULL, '0800627739-(213)', 'Hall Manager', 'Pukeko Hall', NULL),
-(16778722, '2016-09-01', NULL, '0800627739-(214)', 'Hall Manager', 'Tui Hall', NULL),
-(16287642, '2016-09-01', NULL, '0800627739-(215)', 'Hall Manager', 'Weka Hall', NULL),
-
-(22459515, '2022-09-01', NULL, '0800627739-(216)', 'Professor', 'Oteha Campus', 74105),
-(22457456, '2022-09-01', NULL, '0800627739-(217)', 'Advisor', 'Oteha Campus', 74104), 
-(22457866, '2022-09-01', NULL, '0800627739-(218)', 'Professor', 'Oteha Campus', 74101), 
-(22457898, '2022-09-01', NULL, '0800627739-(219)', 'Professor', 'Oteha Campus', 74103), 
-(22457854, '2022-09-01', NULL, '0800627739-(220)', 'Professor', 'Oteha Campus', 74102), 
-(18654321, '2018-09-01', NULL, '0800627739-(221)', 'Cleaner', 'Tui Hall', NULL)
-;
+INSERT INTO STAFF VALUES (18597341, 'Albus', 'Dumbledore', TO_DATE('1964-10-15', 'YYYY-MM-DD'), 0213456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
+INSERT INTO STAFF VALUES (18764532, 'Severus', 'Snape', TO_DATE('1981-11-01', 'YYYY-MM-DD'), 0271234567, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (19284756, 'Minerva', 'McGonagall', TO_DATE('1969-02-21', 'YYYY-MM-DD'), 0212345678, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (19374628, 'Sirius', 'Black', TO_DATE('1989-06-01', 'YYYY-MM-DD'), 0279876543, 'Auckland', 'Northcote', '12 Grimmauld Place', 0652, 'Male');
+INSERT INTO STAFF VALUES (19485732, 'Remus', 'Lupin', TO_DATE('1989-04-25', 'YYYY-MM-DD'), 0219876543, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (19573846, 'Rubeus', 'Hagrid', TO_DATE('1975-10-14', 'YYYY-MM-DD'), 0278765432, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (20294876, 'Lucius', 'Malfoy', TO_DATE('1971-05-09', 'YYYY-MM-DD'), 0214567890, 'Auckland', 'Northcote', 'Malfoy Manor', 0652, 'Male');
+INSERT INTO STAFF VALUES (21293487, 'Horace', 'Slughorn', TO_DATE('1968-06-05', 'YYYY-MM-DD'), 0275678901, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (21384756, 'Pomona', 'Sprout', TO_DATE('1968-09-28', 'YYYY-MM-DD'), 0218765432, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (21475839, 'Gilderoy', 'Lockhart', TO_DATE('1975-08-12', 'YYYY-MM-DD'), 0272345678, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (21584629, 'Rita', 'Skeeter', TO_DATE('1978-04-26', 'YYYY-MM-DD'), 0217654321, 'Auckland', 'Northcote', 'Daily Prophet Office', 0652, 'Female');
+INSERT INTO STAFF VALUES (22457839, 'Sybill', 'Trelawney', TO_DATE('1969-07-13', 'YYYY-MM-DD'), 0276789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Prefer not to say');
+INSERT INTO STAFF VALUES (20322132, 'Charity', 'Burbage', TO_DATE('1970-10-20', 'YYYY-MM-DD'), 0216543210, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Female');
+INSERT INTO STAFF VALUES (16778722, 'Rolanda', 'Hooch', TO_DATE('1968-11-10', 'YYYY-MM-DD'), 0273456789, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Prefer not to say');
+INSERT INTO STAFF VALUES (16287642, 'Filius', 'Flitwick', TO_DATE('1972-02-11', 'YYYY-MM-DD'), 0215432109, 'Auckland', 'Browns Bay', 'Hogwarts School of Witchcraft and Wizardry', 0630, 'Male');
+INSERT INTO STAFF VALUES (22459515, 'Dolores', 'Umbridge', TO_DATE('1972-03-03', 'YYYY-MM-DD'), 0279876542, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Female');
+INSERT INTO STAFF VALUES (22457456, 'Cuthbert', 'Binns', TO_DATE('1971-08-14', 'YYYY-MM-DD'), 0217654320, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (22457866, 'Septima', 'Vector', TO_DATE('1976-12-05', 'YYYY-MM-DD'), 0274567890, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Female');
+INSERT INTO STAFF VALUES (22457898, 'Amycus', 'Carrow', TO_DATE('1968-01-15', 'YYYY-MM-DD'), 0216789012, 'Auckland', 'Auckland CBD', 'Hogwarts School of Witchcraft and Wizardry', 0601, 'Male');
+INSERT INTO STAFF VALUES (22457854, 'Alastor', 'Moody', TO_DATE('1969-05-24', 'YYYY-MM-DD'), 0276543210, 'Auckland', 'Northcote', 'Hogwarts School of Witchcraft and Wizardry', 0652, 'Male');
+INSERT INTO STAFF VALUES (18654321, 'Argus', 'Filch', TO_DATE('1974-07-18', 'YYYY-MM-DD'), 0214321098, 'Auckland', 'Blockhouse Bay', 'Hogwarts School of Witchcraft and Wizardry', 0633, 'Male');
 
 COMMIT;
+
+--STAFF HISTORY TO_DATE('1999-03-19', 'YYYY-MM-DD'),
+
+INSERT INTO STAFF_HISTORY VALUES (18597341, TO_DATE('2018-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(201)', 'Professor', 'Oteha Campus', 74104);
+INSERT INTO STAFF_HISTORY VALUES (18764532, TO_DATE('2018-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(202)', 'Professor', 'Oteha Campus', 74102);
+INSERT INTO STAFF_HISTORY VALUES (19284756, TO_DATE('2019-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(203)', 'Professor', 'Oteha Campus', 74105);
+INSERT INTO STAFF_HISTORY VALUES (19374628, TO_DATE('2019-09-01', 'YYYY-MM-DD'), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '0800627739-(204)', 'Professor', 'Oteha Campus', 74104);
+INSERT INTO STAFF_HISTORY VALUES (19485732, TO_DATE('2019-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(205)', 'Professor', 'Oteha Campus', 74102);
+INSERT INTO STAFF_HISTORY VALUES (19573846, TO_DATE('2019-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(206)', 'Professor', 'Oteha Campus', 74104);
+INSERT INTO STAFF_HISTORY VALUES (20294876, TO_DATE('2020-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(207)', 'Advisor', 'Oteha Campus', 74105);
+INSERT INTO STAFF_HISTORY VALUES (21293487, TO_DATE('2021-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(208)', 'Professor', 'Oteha Campus', 74103);
+INSERT INTO STAFF_HISTORY VALUES (21384756, TO_DATE('2021-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(209)', 'Professor', 'Oteha Campus', 74103);
+INSERT INTO STAFF_HISTORY VALUES (21475839, TO_DATE('2021-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(210)', 'Professor', 'Oteha Campus', 74105);
+INSERT INTO STAFF_HISTORY VALUES (21584629, TO_DATE('2021-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(211)', 'Administrative Assistant', 'Accommodation Office', NULL);
+INSERT INTO STAFF_HISTORY VALUES (22457839, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(212)', 'Professor', 'Oteha Campus', 74101);
+INSERT INTO STAFF_HISTORY VALUES (20322132, TO_DATE('2020-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(213)', 'Hall Manager', 'Pukeko Hall', NULL);
+INSERT INTO STAFF_HISTORY VALUES (16778722, TO_DATE('2016-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(214)', 'Hall Manager', 'Tui Hall', NULL);
+INSERT INTO STAFF_HISTORY VALUES (16287642, TO_DATE('2016-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(215)', 'Hall Manager', 'Weka Hall', NULL);
+INSERT INTO STAFF_HISTORY VALUES (22459515, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(216)', 'Professor', 'Oteha Campus', 74105);
+INSERT INTO STAFF_HISTORY VALUES (22457456, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(217)', 'Advisor', 'Oteha Campus', 74104);
+INSERT INTO STAFF_HISTORY VALUES (22457866, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(218)', 'Professor', 'Oteha Campus', 74101);
+INSERT INTO STAFF_HISTORY VALUES (22457898, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(219)', 'Professor', 'Oteha Campus', 74103);
+INSERT INTO STAFF_HISTORY VALUES (22457854, TO_DATE('2022-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(220)', 'Professor', 'Oteha Campus', 74102);
+INSERT INTO STAFF_HISTORY VALUES (18654321, TO_DATE('2018-09-01', 'YYYY-MM-DD'), NULL, '0800627739-(221)', 'Cleaner', 'Tui Hall', NULL);
 
 COMMIT;
 
