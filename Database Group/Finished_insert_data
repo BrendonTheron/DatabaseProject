@@ -1,24 +1,21 @@
 -- Insert into ACCESSIBILITY table
-INSERT INTO ACCESSIBILITY (
-    ACCESS_ID, ACCESS_REQ_COMMENT, ACCESS_ALLERGY
-) VALUES
-(1001, 'Wheelchair accessible room needed', NULL),
-(1002, 'Requires ground floor accommodation', NULL),
-(1003, 'Needs large print materials', NULL),
-(1004, 'Requires assistance with mobility', NULL),
-(1005, 'Needs hearing assistance', NULL),
 
-(1006, NULL, 'Peanut allergy'),
-(1007, NULL, 'Allergic to shellfish'),
-(1008, NULL, 'Dairy intolerance'),
-(1009, NULL, 'Gluten sensitivity'),
-(1010, NULL, 'Soy allergy'),
+INSERT INTO ACCESSIBILITY VALUES (1001, 'Wheelchair accessible room needed', NULL);
+INSERT INTO ACCESSIBILITY VALUES (1002, 'Requires ground floor accommodation', NULL);
+INSERT INTO ACCESSIBILITY VALUES (1003, 'Needs large print materials', NULL);
+INSERT INTO ACCESSIBILITY VALUES (1004, 'Requires assistance with mobility', NULL);
+INSERT INTO ACCESSIBILITY VALUES (1005, 'Needs hearing assistance', NULL);
+INSERT INTO ACCESSIBILITY VALUES (1006, NULL, 'Peanut allergy');
+INSERT INTO ACCESSIBILITY VALUES (1007, NULL, 'Allergic to shellfish');
+INSERT INTO ACCESSIBILITY VALUES (1008, NULL, 'Dairy intolerance');
+INSERT INTO ACCESSIBILITY VALUES (1009, NULL, 'Gluten sensitivity');
+INSERT INTO ACCESSIBILITY VALUES (1010, NULL, 'Soy allergy');
 
-(1011, 'Requires allergen-free food', 'Peanut allergy'),
-(1012, 'Recovering from leg injury', 'Allergic to shellfish'),
-(1013, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy'),
-(1014, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity'),
-(1015, 'Requires hypoallergenic environment', 'Soy allergy');
+INSERT INTO ACCESSIBILITY VALUES (1011, 'Requires allergen-free food', 'Peanut allergy');
+INSERT INTO ACCESSIBILITY VALUES (1012, 'Recovering from leg injury', 'Allergic to shellfish');
+INSERT INTO ACCESSIBILITY VALUES (1013, 'Allergic to nuts and requires wheelchair-accessible accommodation', 'Nuts allergy');
+INSERT INTO ACCESSIBILITY VALUES (1014, 'Requires hypoallergenic environment and mobility assistance', 'Gluten sensitivity');
+INSERT INTO ACCESSIBILITY VALUES (1015, 'Requires hypoallergenic environment', 'Soy allergy');
 
 COMMIT;
 
@@ -26,6 +23,7 @@ COMMIT;
 INSERT INTO SEMESTER(
     SEM_ID, SEM_START_DATE, SEM_END_DATE
 ) VALUES
+
 ('S12019', '20/02/2019', '31/05/2019'),
 ('S22019', '20/07/2019', '21/10/2019'),
 ('S32019', '10/11/2019', '6/02/2020'),
